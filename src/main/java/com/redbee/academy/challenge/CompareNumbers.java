@@ -2,17 +2,19 @@ package com.redbee.academy.challenge;
 
 public class CompareNumbers {
 
-  /**
-   * Method that receives two numbers and returns the
-   * max of both
-   *
-   * @param a - Some Integer Number
-   * @param b - Another Integer Number
-   * @param c - Another Integer Number
-   * @return The max of a, b and c
-   */
-  public static Integer max(Integer a, Integer b, Integer c) {
-    //TODO: Implement me
-    return null;
-  }
+  public static int mayorEntero(int num1, int num2){
+        if (num1 > num2){
+            return num1;
+        } else {
+            return num2;
+        }
+    }
+
+    public static int mayorEntero(int num1, int num2, int num3){
+        if (mayorEntero(num1,num2) > num3){
+            return mayorEntero(num1,num2);
+        } else {
+            return num3;
+        }
+    }
 }
