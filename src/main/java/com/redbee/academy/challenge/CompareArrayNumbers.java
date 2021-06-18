@@ -14,8 +14,8 @@ public class CompareArrayNumbers {
         for(int i=0; i<arreglo.length; i++){
             System.out.print("Ingrese elemento "+(i+1)+": ");
             arreglo[i] = teclado.nextInt();
-
         }
+    
         int mayor;
         mayor = arreglo[0];
 
@@ -29,11 +29,5 @@ public class CompareArrayNumbers {
 
         }
   
-  public static List<Integer> max(List<Integer> a, List<Integer> b) {
-    //TODO: Implement me
-    return null;
-  }
-
-
-
 }
+
