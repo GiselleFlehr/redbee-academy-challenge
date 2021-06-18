@@ -1,5 +1,5 @@
 package com.redbee.academy.challenge;
-
+import java.util.Scanner;
 import java.util.List;
 
 public class SumArrayNumbers {
