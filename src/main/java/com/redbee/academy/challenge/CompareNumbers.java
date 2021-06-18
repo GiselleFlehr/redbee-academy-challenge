@@ -2,19 +2,24 @@ package com.redbee.academy.challenge;
 
 public class CompareNumbers {
 
-  public static int mayorEntero(int num1, int num2){
-        if (num1 > num2){
-            return num1;
-        } else {
-            return num2;
-        }
-    }
+  public static void main(String[] args){
+        Scanner scan = new Scanner (System.in);
+        int num1, num2, num3;
+        System.out.println("Ingrese 1er número: ");
+        num1 = scan.nextInt();
 
-    public static int mayorEntero(int num1, int num2, int num3){
-        if (mayorEntero(num1,num2) > num3){
-            return mayorEntero(num1,num2);
-        } else {
-            return num3;
+        System.out.println("Ingrese 2do número: ");
+        num2 = scan.nextInt();
+
+        System.out.println("Ingrese 3er número: ");
+        num3 = scan.nextInt();
+
+        if (num1 > num2 && num1 > num3){
+            System.out.println("El valor mayor es: " + num1);
+        } else if (num2 > num1 && num2 > num3){
+            System.out.println("El valor mayor es: " + num2);
+        } else if (num3 > num1 && num3 > num2){
+            System.out.println("El valor mayor es: " + num3);
         }
     }
 }
