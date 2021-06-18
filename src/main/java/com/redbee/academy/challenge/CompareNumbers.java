@@ -1,4 +1,5 @@
 package com.redbee.academy.challenge;
+import java.util.Scanner;
 
 public class CompareNumbers {
 
