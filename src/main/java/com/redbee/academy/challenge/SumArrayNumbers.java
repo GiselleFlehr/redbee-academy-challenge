@@ -4,15 +4,22 @@ import java.util.List;
 
 public class SumArrayNumbers {
 
-  /**
-   * Method that receives an array of numbers and
-   * returns the sum of each number
-   *
-   * @param array - Some integer list. ([1,2,3])
-   * @return The result of 1 + 2 + 3
-   */
-  public static Integer sum(List<Integer> array) {
-    //TODO: Implement me
-    return null;
-  }
+  public static void main(String[] args){
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.println("Ingrese cantidad de elementos del arreglo: ");
+        int n = teclado.nextInt();
+        int arreglo[] = new int [n];
+        int suma=0;
+
+        for(int i=0; i<arreglo.length; i++) {
+            System.out.print("Ingrese elemento " + (i + 1) + ": ");
+            arreglo[i] = teclado.nextInt();
+            suma = suma + arreglo[i];
+        }
+
+        System.out.println("La suma de los elementos del arreglo es: " + suma);
+
+    }
+  
 }
